@@ -20,12 +20,14 @@ COMP1500을 들으셨다면 C#기능의 일부분도 복습한다고 생각하�
 
 ---   
 
+</br>
+
 ## 1. 프로젝트를 준비합니다   
 
  1. 실습문서의 `Clone or download` 버튼 클릭 > `Download ZIP` 선택하여 압축파일을 다운 받고 풀어줍니다.
 ![chrome_6nQQ8pQZGf](https://user-images.githubusercontent.com/70578707/131924269-4cbff23e-d4dc-438f-978a-09af58d6d6ff.png)   
 
- 2. `Lab0.cs` 파일에 다음과 같은 코드가 작성되어있습니다. `BuildTestLab0.cs` 파일은 아직 무시해주세요
+ 2. `Lab0.cs` 파일에 다음과 같은 코드가 작성되어있습니다.
 ```C#
 namespace lab0
 {
@@ -50,6 +52,9 @@ namespace lab0
 
 ---
 
+</br>
+
+
 ## 2. `Lab0.cs` 안에 함수 구현하기
 ### 2.1 `TryGetRepeatingDecimal()` 함수 구현하기
 - `TryGetRepeatingDecimal()` 함수는 `int numerator`, `int donominator` 인자와 `out stirng stringDecimal` 을 out매개변수로 받습니다.
@@ -67,7 +72,7 @@ namespace lab0
 이 함수를 사용하는 방법은 다음과 같습니다
 ```C#
 
-  string repetend;
+  string stringDecimal;
 
   bool bResult1 = Lab0.TryGetRepeatingDecimal(0, 1, out stringDecimal); // False, "0"
   bool bResult2 = Lab0.TryGetRepeatingDecimal(1, 3, out stringDecimal); // True, "0.*3*"
@@ -85,7 +90,7 @@ namespace lab0
 - 기약분수로 표현한다는 의미: x / y 꼴로 표현할 수 있어야 함(x,y 는 서로소인 정수)
 
      ex) 0.1 → 1 / 10
-         0.*3* → 1 / 3
+         0.&#42;3&#42; → 1 / 3
 
 - `string stringDecimal` 로 들어올 수 있는 값은 `TryGetRepeatingDecimal()`함수의 out매개변수로 만들어진 `stringDecimal`값 중 1 미만의 값과 같다고 전제하셔도 됩니다.
 - `long` 자료형을 사용하시면 안 됩니다. `int`형만 사용하세요!   
@@ -99,8 +104,9 @@ namespace lab0
   bool bResult7 = Lab0.TryGetIrreducibleFraction("0.1*6*", out irreducibleFraction); // True, "1 / 6"
   bool bResult8 = Lab0.TryGetIrreducibleFraction("0.25", out irreducibleFraction); // True, "1 / 4"
 
-```   
+```  
 
+</br>
 
 ## 3. 본인 컴퓨터에서 테스트하는 법
 program.cs 파일의 main함수의 바로 처음에   
@@ -110,7 +116,11 @@ program.cs 파일의 main함수의 바로 처음에
 빌드테스트를 전부 통과하면 요런 화면을 보실 수 있을겁니다.
 ![VsDebugConsole_sVDS8ElZUe](https://user-images.githubusercontent.com/70578707/131926102-7b322f5c-3774-4f9a-a246-432e335965fe.png)   
 
-
+</br>
 
 실패한 테스트가 있다면 아래의 위키에서 확인하실 수 있습니다.   
 https://docs.google.com/document/d/1Uuwt2idqyFusmnc6NSgeAqEm6cJ8rsWJ3oa0EZhmc6U/edit?usp=sharing
+
+</br>
+
+
