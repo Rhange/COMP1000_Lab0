@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BuildBot">
+      <HintPath>BuildBot.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildTestLab0">
+      <HintPath>BuildTestLab0.dll</HintPath>
+    </Reference>
+    <Reference Include="Lab0BuildTest">
+      <HintPath>Lab0BuildTest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
