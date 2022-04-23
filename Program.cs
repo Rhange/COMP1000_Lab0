@@ -6,7 +6,7 @@ namespace Lab0
     {
         static void Main(string[] args)
         {
-            BuildBot.BuildTestLab0.Test(Lab0.TryGetRepeatingDecimal, Lab0.TryGetIrreducibleFraction);
+            //BuildBot.BuildTestLab0.Test(Lab0.TryGetRepeatingDecimal, Lab0.TryGetIrreducibleFraction);
 
             string stringDecimal1;
             string stringDecimal2;

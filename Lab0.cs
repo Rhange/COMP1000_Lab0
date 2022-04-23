@@ -9,14 +9,14 @@ namespace Lab0
         {
             stringDecimal = "sample";
 
-            return false;
+
         }
 
         public static bool TryGetIrreducibleFraction(string stringDecimal, out string irreducibleFraction)
         {
             irreducibleFraction = "sample";
 
-            return false;
+            
         }
     }
 }
